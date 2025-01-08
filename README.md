@@ -1,2 +1,2 @@
 # projetinho_oo
-Este projeto é um Sistema de Gerenciamento de Livros, desenvolvido para facilitar a administração e organização de uma biblioteca ou coleção de livros. O sistema permite o cadastro, consulta, edição e remoção de livros, além de oferecer funcionalidades comoara facilitar a navegação entre os títulos.
+Este projeto é um Sistema de Gerenciamento de Livros, desenvolvido para facilitar a administração e organização de uma biblioteca ou coleção de livros. O sistema permite o cadastro de usuários, cadastro de livros, exibir todos usuários, exibir todos livros disponíveis, além de oferecer funcionalidades como realizar um empréstimo, fazer a devolução de um emprestimo e ver livros emprestados no momento.

@@ -1,2 +1,2 @@
-# projetinho_oo
+# Projeto inicial de Orientação a Objetos
 Este projeto é um Sistema de Gerenciamento de Livros, desenvolvido para facilitar a administração e organização de uma biblioteca ou coleção de livros. O sistema permite o cadastro de usuários, cadastro de livros, exibição todos usuários e exibir livros disponíveis, além de oferecer funcionalidades como realizar um empréstimo, fazer a devolução de um emprestimo e ver os livros emprestados no momento. Sistema muito interessante, pois permite controlar de forma interativa e simples todo processo de gestão de uma biblioteca ou conjunto de obras literarias.

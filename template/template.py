@@ -1,22 +1,16 @@
-from tkinter .ttk import *
+from tkinter.ttk import *
 from tkinter import *
 from PIL import Image, ImageTk
-from tkinter import Tk, ttk
-from datetime import datetime, date, timedelta
-import re
 from tkinter import messagebox, END
-# importando as funcoes da view
 from tkinter import Tk, Frame, Label, Button, NSEW, FALSE
 from tkinter.ttk import Style
 from PIL import Image, ImageTk
-
 import sys
 import os
-
 # Adiciona o diretório principal ao sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from View.view import Usuario, Livro, Emprestimo, Devolucao
+# importando as funcoes da view
+from view.view import Usuario, Livro, Emprestimo, Devolucao
 
 class Controller:
     """Classe para controlar as ações do sistema."""
@@ -62,6 +56,7 @@ class App:
 
     def __configurar_janela(self):
         """Configurações internas da janela."""
+
         self.__janela.title("Sistema de Gerenciamento de Livros")
         self.__janela.geometry('1150x393')
         self.__janela.configure(background="#FFFFFF")
@@ -72,6 +67,7 @@ class App:
 
     def __criar_frames(self):
         """Cria os frames da interface gráfica."""
+
         self.__frame_cima = Frame(self.__janela, width=1150, height=50, bg="#E9A178", relief="flat")
         self.__frame_cima.grid(row=0, column=0, columnspan=2, sticky=NSEW)
 
@@ -85,7 +81,7 @@ class App:
 
     def __adicionar_logo(self):
         """Adiciona o logo ao frame superior."""
-        app_img = Image.open('images/icons8-books-100.png').resize((40, 40))
+        app_img = Image.open('Template/images/icons8-books-100.png').resize((40, 40))
         app_img = ImageTk.PhotoImage(app_img)
 
         app_logo = Label(self.__frame_cima, image=app_img, compound='left', padx=5, anchor='nw',
@@ -104,13 +100,13 @@ class App:
     def __criar_botoes(self):
         """Adiciona os botões ao menu esquerdo."""
         botoes = [
-            ('images/icons8-add-100.png', " Novo usuário", 'novo_usuario'),
-            ('images/icons8-add-100.png', " Novo livro", 'novo_livro'),
-            ('images/icons8-books-100.png', " Exibir todos os livros", 'ver_livros'),
-            ('images/icons8-user-100.png', " Exibir todos os usuários", 'ver_usuarios'),
-            ('images/icons8-add-100.png', " Realizar um empréstimo", 'emprestimo'),
-            ('images/icons8-update-100.png', " Devolução de um empréstimo", 'retorno'),
-            ('images/icons8-shopping-cart-100.png', " Livros emprestados no momento", 'ver_livros_emprestados')
+            ('Template/images/icons8-add-100.png', " Novo usuário", 'novo_usuario'),
+            ('Template/images/icons8-add-100.png', " Novo livro", 'novo_livro'),
+            ('Template/images/icons8-books-100.png', " Exibir todos os livros", 'ver_livros'),
+            ('Template/images/icons8-user-100.png', " Exibir todos os usuários", 'ver_usuarios'),
+            ('Template/images/icons8-add-100.png', " Realizar um empréstimo", 'emprestimo'),
+            ('Template/images/icons8-update-100.png', " Devolução de um empréstimo", 'retorno'),
+            ('Template/images/icons8-shopping-cart-100.png', " Livros emprestados no momento", 'ver_livros_emprestados')
         ]
 
         for i, (imagem, texto, comando) in enumerate(botoes):

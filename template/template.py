@@ -81,7 +81,7 @@ class App:
 
     def __adicionar_logo(self):
         """Adiciona o logo ao frame superior."""
-        app_img = Image.open('Template/images/icons8-books-100.png').resize((40, 40))
+        app_img = Image.open('template/images/icons8-books-100.png').resize((40, 40))
         app_img = ImageTk.PhotoImage(app_img)
 
         app_logo = Label(self.__frame_cima, image=app_img, compound='left', padx=5, anchor='nw',
@@ -100,13 +100,13 @@ class App:
     def __criar_botoes(self):
         """Adiciona os botões ao menu esquerdo."""
         botoes = [
-            ('Template/images/icons8-add-100.png', " Novo usuário", 'novo_usuario'),
-            ('Template/images/icons8-add-100.png', " Novo livro", 'novo_livro'),
-            ('Template/images/icons8-books-100.png', " Exibir todos os livros", 'ver_livros'),
-            ('Template/images/icons8-user-100.png', " Exibir todos os usuários", 'ver_usuarios'),
-            ('Template/images/icons8-add-100.png', " Realizar um empréstimo", 'emprestimo'),
-            ('Template/images/icons8-update-100.png', " Devolução de um empréstimo", 'retorno'),
-            ('Template/images/icons8-shopping-cart-100.png', " Livros emprestados no momento", 'ver_livros_emprestados')
+            ('template/images/icons8-add-100.png', " Novo usuário", 'novo_usuario'),
+            ('template/images/icons8-add-100.png', " Novo livro", 'novo_livro'),
+            ('template/images/icons8-books-100.png', " Exibir todos os livros", 'ver_livros'),
+            ('template/images/icons8-user-100.png', " Exibir todos os usuários", 'ver_usuarios'),
+            ('template/images/icons8-add-100.png', " Realizar um empréstimo", 'emprestimo'),
+            ('template/images/icons8-update-100.png', " Devolução de um empréstimo", 'retorno'),
+            ('template/images/icons8-shopping-cart-100.png', " Livros emprestados no momento", 'ver_livros_emprestados')
         ]
 
         for i, (imagem, texto, comando) in enumerate(botoes):
